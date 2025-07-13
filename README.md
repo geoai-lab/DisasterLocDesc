@@ -1,7 +1,9 @@
 # How do people describe locations during a natural disaster: a dataset with labeled location descriptions from ten disasters
 
 #### Overall description
-This dataset contains location descriptions labeled from tweets posted in 10 different natural disasters. This dataset is collaboratively annotated by a partnership between the University at Buffalo and the Geocove company. The human annotators include disaster experts, GIS researchers, and GIS graduate students. 
+This dataset contains location descriptions labeled from tweets posted in 10 different natural disasters. This dataset is collaboratively annotated by a partnership between the University at Buffalo and the Geocove company. The human annotators include disaster experts, GIS researchers, and GIS graduate students.
+
+https://geoai.geog.buffalo.edu/VariousResources/DisasterLocDesc_Data_Public.zip
 
 
 #### Data description
