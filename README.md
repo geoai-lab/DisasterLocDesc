@@ -5,7 +5,17 @@ Social media platforms, such as Twitter/X and Facebook, have been increasingly u
 
 
 ### Data description
-The dataset contains 7,149 tweets related the 10 disasters. The 10 disasters include: *2017 Hurricane Harvey, 2018 California Camp Fire, 2020 Easter Tornado Outbreak, 2021 Texas Winter Storm, 2021 Kentucky Tornado, 2022 St. Louis Flooding, 2022 Hurricane Ian, 2022 Buffalo Blizzard, 2022 California Flooding, and 2023 Hawaii Firestorm*. It was collaboratively annotated by the University at Buffalo and the Geocove company. The annotators include disaster experts, GIS professionals, and GIS graduates. The annotation tool is [GALLOC](https://github.com/geoai-lab/GALLOC). The dataset can be downloaded at the link: https://geoai.geog.buffalo.edu/VariousResources/DisasterLocDesc_Data_Public.zip. Note that the files contain only annotations and do not include the original text of tweets. The version containing the original text is available from the corresponding author upon reasonable request. 
+The dataset contains 7,149 tweets related the 10 disasters. The 10 disasters include: *2017 Hurricane Harvey, 2018 California Camp Fire, 2020 Easter Tornado Outbreak, 2021 Texas Winter Storm, 2021 Kentucky Tornado, 2022 St. Louis Flooding, 2022 Hurricane Ian, 2022 Buffalo Blizzard, 2022 California Flooding, and 2023 Hawaii Firestorm*. It was collaboratively annotated by the University at Buffalo and the Geocove company. The annotators include disaster experts, GIS professionals, and GIS graduates. The annotation tool is [GALLOC](https://github.com/geoai-lab/GALLOC). The annotation accuracy evaluated based on randomly selected samples is shown in Figure 1.  
+
+The dataset can be downloaded at the link: https://geoai.geog.buffalo.edu/VariousResources/DisasterLocDesc_Data_Public.zip. Note that the files contain only annotations and do not include the original text of tweets. The version containing the original text is available from the corresponding author upon reasonable request.
+
+
+<p align="center">
+<img align="center" src="Figs/Accuray.jpg" width="600" />
+<br />
+Figure 1. A bar chart illustrating the annotation accuracy of two annotators across each batch.
+</p>
+<br />
 
 
 ### Other files
