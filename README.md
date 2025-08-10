@@ -5,12 +5,12 @@ Social media platforms, such as Twitter/X and Facebook, have been increasingly u
 
 
 ### Data description
-The dataset contain 7,149 tweets related the 10 disasters. The 10 disasters includess: *2017 Hurricane Harvey, 2018 California Camp Fire, 2020 Easter Tornado Outbreak, 2021 Texas Winter Storm, 2021 Kentucky Tornado, 2022 St. Louis Flooding, 2022 Hurricane Ian, 2022 Buffalo Blizzard, 2022 California Flooding, and 2023 Hawaii Firestorm*. The dataset was collaboratively annotated by the University at Buffalo and the Geocove company. The annotators include disaster experts, GIS professionals, and GIS graduates. The annotation tool is [GALLOC](https://github.com/geoai-lab/GALLOC). The dataset can be downloaded at the link: https://geoai.geog.buffalo.edu/VariousResources/DisasterLocDesc_Data_Public.zip. Note that the files contain only annotated text and do not include the original text of tweets. The version containing the original text is available from the corresponding author upon reasonable request. 
+The dataset contains 7,149 tweets related the 10 disasters. The 10 disasters include: *2017 Hurricane Harvey, 2018 California Camp Fire, 2020 Easter Tornado Outbreak, 2021 Texas Winter Storm, 2021 Kentucky Tornado, 2022 St. Louis Flooding, 2022 Hurricane Ian, 2022 Buffalo Blizzard, 2022 California Flooding, and 2023 Hawaii Firestorm*. It was collaboratively annotated by the University at Buffalo and the Geocove company. The annotators include disaster experts, GIS professionals, and GIS graduates. The annotation tool is [GALLOC](https://github.com/geoai-lab/GALLOC). The dataset can be downloaded at the link: https://geoai.geog.buffalo.edu/VariousResources/DisasterLocDesc_Data_Public.zip. Note that the files contain only annotations and do not include the original text of tweets. The version containing the original text is available from the corresponding author upon reasonable request. 
 
 
 ### Other files
 The file "DisasterLocDesc_Annotation_Guideline.pdf" provides the guidelines followed by annotators for message annotation. The four Python scripts (.py) were used to preprocess the original tweets and  annotations:
-* Data_Collection.py: collects disaster-related tweets using the Twitter/X API;
+* Data_Collection.py: collect disaster-related tweets using the Twitter/X API;
 * Data_Preprocessing.py: preprocess tweets through length filtering, deduplication, and location description–based filtering;
 * Data_Random_Selection.py: randomly sample tweets from the preprocessed data;
 * Annotations_Compare.py: compare location description annotations from annotators against the ground truth;
