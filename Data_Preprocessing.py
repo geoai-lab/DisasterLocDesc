@@ -3,8 +3,8 @@ import re
 import os
 
 
+# Step 1: Filter out tweets where the word count is less than 3
 def preprocess_step1(data):
-    # Step 1: Filter out tweets where the word count is less than 3
     processed_data_step1 = []
     removed_ids_step1 = []
 
@@ -25,8 +25,8 @@ def preprocess_step1(data):
     return processed_data_step1, removed_ids_step1
 
 
+# Step 2: Remove 're:' prefix, URLs, and perform deduplication based on processed text.
 def preprocess_step2(data):
-    # Step 2: Remove 're:' prefix, URLs, and perform deduplication based on processed text.
     processed_data_step2 = []
     removed_ids_step2 = []
     seen_texts = set()
@@ -47,8 +47,8 @@ def preprocess_step2(data):
     return processed_data_step2, removed_ids_step2
 
 
+# Extract potential locations from a tweet using a regex pattern, excluding generic references
 def regLoc(text):
-    # Extract potential locations from a tweet using a regex pattern, excluding generic references
     regex = r'[0-9A-Za-z]+\s(rd\.?|ave\.?|Street|Avenue|Road|Yard|Lane|Court|Hill|Highwalk|Way|Square|Walk|Park|Underground|Passage|Alley|Close|Gardens|Hall|bayou|river|stream|creek|brook|Circle|Row|Buildings|Crescent|Market|Drive|Arcade|Esplanade|Grove|Garden|Bridge|Overpass|interstate|highway|expressway|freeway|tollway|exit|parkway|route|church|school|center|Ridge|Terrace|Boulevard|Inn|Wharf|St\.?|Ave\.?|Rd\.?|Yd\.?|Ct\.?|Pl\.?|Sq\.?|Bld\.?|Blvd\.?|Cres\.?|Dr\.?|Esp\.?|Grn\.?|Gr\.?|Tce\.?|Bvd\.?|Ln\.?|street|avenue|road|yard|lane|court|square|park|underground|building|Wall|wall|crescent|drive|esplanade|garden|bridge|ridge|terrace|boulevard|Building|grove|underground|(I|i|US|us|Interstate|interstate|United States|united states|SR|State Road)[ -]?\d+)\b'
     locations = re.finditer(regex, text, re.IGNORECASE)
 
@@ -70,8 +70,8 @@ def regLoc(text):
     return loc
 
 
+# Step 3: Remove tweets without any detected potential locations.
 def preprocess_step3(data):
-    # Step 3: Remove tweets without any detected potential locations.
     processed_data_step3 = []
     removed_ids_step3 = []
 
@@ -89,8 +89,8 @@ def preprocess_step3(data):
     return processed_data_step3, removed_ids_step3
 
 
+# Run the three-step preprocessing pipeline on one JSON file and save the cleaned data
 def preprocess_one_file(input_file, output_file):
-    # Run the three-step preprocessing pipeline on one JSON file and save the cleaned data
     with open(input_file, 'r', encoding='utf-8') as f:
         lines = f.readlines()
 
@@ -116,8 +116,8 @@ def preprocess_one_file(input_file, output_file):
             f.write(json.dumps(item) + '\n')
 
 
+# Process all JSON files in the input folder and save them to the output folder.
 def process_all_files(input_folder, output_folder):
-    # Process all JSON files in the input folder and save them to the output folder.
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
 
