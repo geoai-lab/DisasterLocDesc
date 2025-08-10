@@ -15,15 +15,15 @@ query_params = {'query': '-is:retweet lang:en (#Harvey OR #Harvey2017 OR #Harvey
                 'expansions': 'author_id,geo.place_id'}
 
 
+# Add bearer token authorization and user agent headers to the request
 def bearer_oauth(r):
-    # Add bearer token authorization and user agent headers to the request
     r.headers["Authorization"] = f"Bearer {bearer_token}"
     r.headers["User-Agent"] = "v2FullArchiveSearchPython"
     return r
 
 
+# Send a GET request to the X API endpoint and return the JSON response
 def connect_to_endpoint(url, params):
-    # Send a GET request to the X API endpoint and return the JSON response
     response = requests.request("GET", url, auth=bearer_oauth, params=params)
     print(response.status_code)
     if response.status_code != 200:
@@ -31,8 +31,8 @@ def connect_to_endpoint(url, params):
     return response.json()
 
 
+# Request tweets from the API, save the response to a file, and return pagination info
 def request_tweet():
-    # Request tweets from the API, save the response to a file, and return pagination info
     json_response = connect_to_endpoint(search_url, query_params)
     formatted_json = json.dumps(json_response, indent=4, sort_keys=True)
     next_page = None
