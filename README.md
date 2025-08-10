@@ -11,7 +11,7 @@ The dataset can be downloaded at the link: https://geoai.geog.buffalo.edu/Variou
 
 
 <p align="center">
-<img align="center" src="accuray.jpg" width="600" />
+<img align="center" src="accuracy.jpg" width="600" />
 <br />
 Figure 1. A bar chart illustrating the annotation accuracy of two annotators across each batch.
 </p>
