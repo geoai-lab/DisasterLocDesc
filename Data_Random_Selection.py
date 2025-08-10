@@ -6,24 +6,25 @@ input_folder = ''  # Path to the folder containing processed JSON files
 output_folder = ''  # Path to the folder where the randomly sampled tweets will be saved
 random_seed = 42
 
+
+# Read all lines from a processed JSON file containing tweets and parse them into a list of JSON objects
 def read_file(filepath):
-    # Read all lines from a processed JSON file containing tweets and parse them into a list of JSON objects
     with open(filepath, 'r', encoding='utf-8') as file:
         lines = file.readlines()
         json_objects = [json.loads(line) for line in lines]
     return json_objects
 
 
+# Save the randomly sampled JSON objects to a specific output file
 def save_sampled_objects(sampled_objects, output_filename):
-    # Save the randomly sampled JSON objects to a specific output file
     output_path = os.path.join(output_folder, output_filename)
     with open(output_path, 'w', encoding='utf-8') as file:
         for obj in sampled_objects:
             file.write(json.dumps(obj) + '\n')
 
 
+# Randomly sample tweets from each JSON file
 def random_sample_tweets(files, random_seed=42):
-    # Randomly sample tweets from each JSON file
     total_sampled = 0
     random.seed(random_seed)
 
