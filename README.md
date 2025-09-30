@@ -10,12 +10,6 @@ The dataset contains 7,149 tweets related the 10 disasters. The 10 disasters inc
 The dataset can be downloaded at the link: https://geoai.geog.buffalo.edu/VariousResources/DisasterLocDesc_Data_Public.zip. Note that the files contain only annotations and do not include the original text of tweets. The version containing the original text is available from the corresponding author upon reasonable request.
 
 
-<p align="center">
-<img align="center" src="accuracy.png" width="600" />
-<br />
-Figure 1. A bar chart illustrating the annotation accuracy of two annotators across each batch.
-</p>
-<br />
 
 
 ### Other files
