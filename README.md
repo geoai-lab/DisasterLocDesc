@@ -5,22 +5,28 @@ Location information is highly important during a natural disaster for reaching 
 
 
 ### Data description
-This dataset contains 7,149 tweets related the 10 disasters. The 10 disasters include: *2017 Hurricane Harvey, 2018 California Camp Fire, 2020 Easter Tornado Outbreak, 2021 Texas Winter Storm, 2021 Kentucky Tornado, 2022 St. Louis Flooding, 2022 Hurricane Ian, 2022 Buffalo Blizzard, 2022 California Flooding, and 2023 Hawaii Firestorm*. It was collaboratively annotated by the University at Buffalo and the Geocove company. The annotators include disaster experts, GIS professionals, and GIS graduates. The annotation tool is [GALLOC](https://github.com/geoai-lab/GALLOC). 
+This dataset comprises 7,149 tweets associated with 10 disasters across five distinct disaster types. The 10 disasters are:
+* Hurricanes: 2017 Hurricane Harvey, 2022 Hurricane Ian
+* Wildfires: 2018 California Camp Fire, 2023 Hawaii Firestorm
+* Floods: 2022 St. Louis Floods, 2022 California Floods
+* Tornados: 2020 Easter Tornado Outbreak, 2021 Kentucky Tornado
+* Winter storms: 2021 Texas Winter Storm, 2022 Buffalo Blizzard
+It was collaboratively annotated by the University at Buffalo and a professional GIS company that specializes in disaster management. The annotators include disaster manager and GIS experts. The annotation tool is [GALLOC](https://github.com/geoai-lab/GALLOC). 
 
-The dataset can be downloaded at the link: https://geoai.geog.buffalo.edu/VariousResources/DisasterLocDesc_Data_Public.zip. Note that the files contain only annotations and do not include the original text of tweets. The version containing the original text is available from the corresponding author upon reasonable request.
+The public version of this annotated dataset can be downloaded at the link: https://geoai.geog.buffalo.edu/VariousResources/DisasterLocDesc_Data_Public.zip. Following the data sharing policy of X/Twitter, the public version does not contain full tweets but contains tweet ID and annotations. A private version of this dataset containing full tweets is available upon email requests to the first and corresponding authors. Due to the sensitive nature of this dataset (e.g., locations of victims during a disaster), we ask interested researchers to complete a responsible conduct of research training course, such as the one from the Collaborative Institutional Training Initiative (CITI) Program, and show your course completion certificate when requesting this dataset.
 
 
 
 
 ### Other files
-The file "DisasterLocDesc_Annotation_Guideline.pdf" provides the guidelines followed by annotators for message annotation. The four Python scripts (.py) were used to preprocess the original tweets and  annotations:
+The file "DisasterLocDesc_Annotation_Guideline.pdf" provides the guidelines followed by annotators for message annotation. The four Python scripts (.py) include the code used for collecting and preprocessing the original tweets and  annotations:
 * Data_Collection.py: collect disaster-related tweets using the Twitter/X API;
-* Data_Preprocessing.py: preprocess tweets through length filtering, deduplication, and location description–based filtering;
+* Data_Preprocessing.py: preprocess tweets by applying three filters to the collected data including a tweet-length filter, a deduplication filter, and a location-term filter;
 * Data_Random_Selection.py: randomly sample tweets from the preprocessed data;
 * Annotations_Compare.py: compare location description annotations from annotators against the ground truth;
 
 ### Authors
-* **Kai Sun** - *GeoAI Lab* - Email: ksun4@buffalo.edu
+* **Kai Sun** - *GeoAI Lab* - Email: kaisun@cuhk.edu.hk
 * **Yingjie Hu** - *GeoAI Lab* - Email: yhu42@buffalo.edu
 
 
@@ -28,4 +34,4 @@ The file "DisasterLocDesc_Annotation_Guideline.pdf" provides the guidelines foll
 ### Reference
 If you use the data or code from this repository, we will really appreciate if you can cite our paper:
 
-Kai Sun and Yingjie Hu. 2025. How do people describe locations during a natural disaster: a dataset with labeled location descriptions from ten disasters.
+Kai Sun, Yingjie Hu, and Kenneth Joseph. 2025. A dataset from ten disasters for studying location descriptions and training AI models.
