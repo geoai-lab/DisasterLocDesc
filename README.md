@@ -12,7 +12,7 @@ This dataset contains 7,149 tweets from 10 disasters across five disaster types.
 * Tornados: 2020 Easter Tornado Outbreak, 2021 Kentucky Tornado
 * Winter storms: 2021 Texas Winter Storm, 2022 Buffalo Blizzard
 
-This dataset was collaboratively annotated by the University at Buffalo and a professional GIS company that specializes in disaster management. The annotators are disaster management and GIS experts. The annotation tool used is [GALLOC](https://github.com/geoai-lab/GALLOC). 
+The tool used to annotate this dataset is [GALLOC](https://github.com/geoai-lab/GALLOC). 
 
 The public version of this annotated dataset can be downloaded at the link: https://geoai.geog.buffalo.edu/VariousResources/DisasterLocDesc_Data_Public.zip. Following the data sharing policy of X/Twitter, the public version does not contain full tweets but contains tweet ID and annotations. A private version of this dataset containing full tweets is available upon email requests to the first and corresponding authors. Due to the sensitive nature of this dataset (e.g., locations of victims during a disaster), we ask interested researchers to complete a responsible conduct of research training course, such as the one from the Collaborative Institutional Training Initiative (CITI) Program, and show a course completion certificate when requesting this dataset.
 
