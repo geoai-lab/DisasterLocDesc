@@ -14,7 +14,7 @@ This dataset contains 7,149 tweets from 10 disasters across five disaster types.
 
 The tool used to annotate this dataset is [GALLOC](https://github.com/geoai-lab/GALLOC). 
 
-This dataset can be downloaded at the link: https://geoai.geog.buffalo.edu/VariousResources/DisasterLocDesc_Data_Public.zip. Following the data sharing policy of X/Twitter, this dataset does not contain full tweets but contains tweet ID and annotations.
+This dataset can be downloaded at the link: https://doi.org/10.6084/m9.figshare.31044040. Following the data sharing policy of X/Twitter, this dataset does not contain full tweets but contains tweet ID and annotations.
 
 
 
